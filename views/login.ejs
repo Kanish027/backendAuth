@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="App">
+        <header class="App-header">
+        <h1 class="log">Login Page</h1>
+        <form action="/login" method="post">
+          <div class="user">
+          <input class="inp" type="email" name="email" placeholder="Email Address" value="<%=locals.email%>" required></input><br></br>
+          </div>
+          <div class="pass">
+        <input class="inp" type="password" name="password" placeholder="Password" required></input><br></br>
+          </div>
+          <div class="inps">
+            <p class="error"><%=locals.message%></p>
+          </div>
+          <div class="inps">
+            <p class="error"><%=locals.msgs%></p>
+          </div>
+          <div class="btns">
+        <button class="btn" type="submit">Login</button>
+          </div>
+          <div class="signup">
+            <a class="regi" href="./register">Sign Up</a>
+          </div>
+        </form>
+        </header>
+      </div>
+    
+</body>
+</html>

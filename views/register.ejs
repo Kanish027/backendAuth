@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="App">
+        <header class="App-header">
+        <h1 class="log">Register Now</h1>
+        <form method="post">
+          <div class="user">
+          <input class="inp" type="name" name="name" placeholder="Your Name" required></input><br></br>
+          </div>    
+          <div class="user">
+          <input class="inp" type="email" name="email" placeholder="Email Address" required></input><br></br>
+          </div>
+          <div class="pass">
+        <input class="inp" type="password" name="password" placeholder="Password" required></input><br></br>
+          </div>
+          <div class="pass">
+            <p class="error"><a class="err" href="login"><%=locals.msg %></a></p><br>
+          </div>
+          <div class="btns">
+        <button class="btn" type="submit">Sign Up</button>
+          </div>
+        </form>
+  
+        </header>
+      </div>
+    
+</body>
+</html>

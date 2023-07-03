@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background: #abbaab;
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    background: linear-gradient(to right, #ffffff, #abbaab); 
+
+    }
+.log{
+    font-family: "Montserrat ",sans-serif;
+    letter-spacing: 1px;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.inp{
+    font-size: 15px;
+    padding: 15px 95px 15px 14px;;
+    background-color: #fff;
+    border: 1px solid red;
+    /* color: red; */
+    font-family: "Montserrat",sans-serif;
+}
+.user{
+    padding-bottom: 10px;
+}
+/* .pass{
+    padding-bottom: 10px;
+} */
+.btn{
+    background-color:#166fe5;
+    color: white;
+    padding: 8px 29px;
+    border: 1px solid #166fe5;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat",sans-serif;;
+}
+.btnLogin{
+    background-color: #166fe5;
+    color: white;
+    padding: 8px 29px;
+    border: 1px solid #166fe5;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat",sans-serif;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    transition: all 7ms ease-in-out;
+    background-color:#1157b5;
+}
+
+.btnLogin:hover{
+    transition: all 7ms ease-in-out;
+    background-color:#1157b5;
+}
+
+.signup{
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.regi{
+    text-decoration: none;
+    color: #166fe5;
+    font-weight: 500;    
+    font-family: "Montserrat",sans-serif;
+}
+
+.regi:hover{
+    color: #1157b5;
+    text-decoration: underline;
+}
+
+.err{
+    text-decoration: underline;
+    color: rgb(216, 0, 0);
+}
+
+.error{
+    color: rgb(216, 0, 0);
+    font-family: "Montserrat",sans-serif;;
+}
+
+.inps{
+    margin: 8px;
+}
+
+.App-header{
+    width: 45%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    border: 2px solid rgb(252, 159, 175);
+}
