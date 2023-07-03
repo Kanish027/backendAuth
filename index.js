@@ -45,7 +45,7 @@ const isAuthenticated = async(req,res,next) =>{
         res.redirect("/login");
     }
 };
-app.get("/Home",isAuthenticated,(req,res) => {
+app.get("/",isAuthenticated,(req,res) => {
 
     // Here in user all values are stored
     // console.log(req.user);
@@ -54,7 +54,7 @@ app.get("/Home",isAuthenticated,(req,res) => {
 
 });
 
-app.get("/Home",(req,res)=>{
+app.get("/",(req,res)=>{
 
    const {token} = req.cookies;
     // console.log(token);
@@ -94,7 +94,7 @@ app.post("/login",async(req,res)=>{
         httpOnly : true, 
         expires : new Date(Date.now()+50*1000),
     });
-    res.redirect("/Home");
+    res.redirect("/");
 
 });
 
@@ -125,7 +125,7 @@ app.post("/register",async(req,res)=>{
         httpOnly : true, 
         expires : new Date(Date.now()+50*1000),
     });
-    res.redirect("/Home");
+    res.redirect("/");
 });
 
 app.get("/logout",(req,res)=>{
@@ -133,7 +133,7 @@ app.get("/logout",(req,res)=>{
         httpOnly : true,
         expires : new Date(Date.now()),
     });
-    res.redirect("/Home");
+    res.redirect("/");
 })
 
 app.listen (5000,() => {
